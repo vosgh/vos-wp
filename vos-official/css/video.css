@@ -143,7 +143,7 @@
   margin-bottom: 0.978vw;
 }
 
-.video-feed h3 {
+.video.video-feed h3 {
   font-size: 0.9375em;
   font-weight: 500;
   line-height: 120%; /* 1.125rem */

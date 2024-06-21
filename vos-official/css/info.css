@@ -23,7 +23,7 @@
   gap: 1.39vw; /*20px*/
 }
 
-.text {
+.info.text {
   text-align: justify;
   color: #333333;
 }

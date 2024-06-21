@@ -40,7 +40,7 @@
   height: fit-content;
 }
 
-.company-main h4 {
+.company .company-main h4 {
   opacity: 0.5;
 }
 
@@ -65,8 +65,8 @@
   width: 62.5vw; /*900px*/
 }
 
-.about-company p,
-.video-container p {
+.company .about-company p,
+.company .video-container p {
   text-align: justify;
 }
 
@@ -75,6 +75,6 @@
   gap: 4.17vw; /*60px*/
 }
 
-.video-container img {
+.company .video-container img {
   width: 62.5vw; /*900px*/
 }

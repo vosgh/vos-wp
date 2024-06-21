@@ -1,0 +1,104 @@
+/*Video gallery*/
+
+.video-gallery {
+  padding: 2.85vw 2.78vw 4.86vw 2.78vw; /*41px 40px 70px 40px*/
+  display: flex;
+  flex-direction: column;
+}
+
+.video-gallery h2 {
+  margin-top: 1.94vw; /*28px*/
+}
+
+.video-gallery.video-main {
+  margin-top: 3.75vw; /*54px*/
+  width: 100%;
+  display: flex;
+  border-radius: 0.69vw;
+  background: #e8edf0;
+}
+
+.video-gallery.video-main img {
+  border-radius: 0.69vw;
+}
+
+.video-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3.47vw 4.17vw 2.78vw 4.17vw;
+}
+
+.video-description h3,
+.description-links {
+  margin-top: 0.21vw;
+}
+
+.video-description h4 {
+  margin-top: 1.81vw;
+  opacity: 0.6;
+}
+
+.nav-btns {
+  align-self: flex-end;
+}
+
+.btn1,
+.btn2 {
+  width: 6.94vw;
+}
+
+.videos-container {
+  margin-top: 6.25vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.47vw; /*50px*/
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  width: 29.1vw; /*419px*/
+}
+
+.album-description {
+  margin-top: 1.11vw; /*16px*/
+  width: 100%;
+}
+
+.video-gallery.dates {
+  margin-top: 0.35vw; /*5px*/
+}
+
+.gallery-pagination {
+  display: flex;
+  align-self: center;
+  margin-top: 4.17vw; /*60px*/
+  /*  width: 24.38vw;
+      height: 2.36vw;*/
+}
+
+.pagination-start,
+.pagination-end {
+  display: flex;
+  align-items: center;
+  gap: 1.74vw;
+}
+
+.gallery-pagination__a,
+.gallery-pagination__button {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.pagination-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.69vw;
+}
+
+.gallery-pagination__button {
+  width: 2.36vw; /*34px*/
+  height: 2.36vw; /*34px*/
+  border-radius: 0.69vw; /*10px*/
+  border: none;
+}

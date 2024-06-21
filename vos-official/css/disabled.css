@@ -76,20 +76,20 @@
   margin-top: 5.28vw;
 }
 
-.info {
+.inform {
   display: flex;
   padding: 0 2.57vw 0 2.85vw;
   margin-top: 2.78vw;
 }
 
-.info-container {
+.inform-container {
   width: 100%;
   display: flex;
   margin-left: 9.44vw;
   justify-content: space-between;
 }
 
-.info-container h4 {
+.inform-container h4 {
   width: 23.19vw;
 }
 

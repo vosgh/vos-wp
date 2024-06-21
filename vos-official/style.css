@@ -30,4 +30,27 @@ Theme Name: vos-official
 @import "css/news.css";
 @import "css/onenews.css";
 
+/*question form, login, work*/
+@import "css/ask.css";
+@import "css/login.css";
+@import "css/work.css";
 
+/*companies*/
+@import "css/companies.css";
+@import "css/company.css";
+
+/*documents*/
+@import "css/docs.css";
+@import "css/doc.css";
+
+/*events*/
+@import "css/events.css";
+@import "css/oneevent.css";
+
+/*any info page*/
+@import "css/info.css";
+
+/*photo, video*/
+@import "css/photogallery.css";
+@import "css/album.css";
+@import "css/videogallery.css";

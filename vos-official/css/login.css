@@ -1,0 +1,88 @@
+/*Login page*/
+
+.login {
+  padding: 4.03vw 29.1vw 0 29.24vw;
+  display: flex;
+  width: 100%;
+}
+
+.login-form {
+  width: 41.67vw;
+  height: fit-content;
+  border-radius: 1.39vw;
+  background: #fff;
+  box-shadow: 0 1.39vw 3.47vw 0 rgba(0, 0, 0, 0.2);
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  padding: 3.47vw 5.56vw 5.97vw 5.56vw;
+}
+
+.login-form h2 {
+  align-self: center;
+}
+
+.login-inp,
+.password-inp {
+  padding: 1.18vw 0 1.18vw 1.67vw;
+  border-radius: 0.42vw;
+  border: 0.07vw solid rgba(0, 0, 0, 0.1);
+  background: #e8edf0;
+}
+
+::placeholder {
+  color: #333;
+  font-size: 1.25em;
+  line-height: 130%; /* 26px */
+  letter-spacing: -0.025em;
+}
+
+.login-inp {
+  margin-top: 3.47vw;
+}
+
+.password-inp {
+  margin-top: 0.69vw;
+}
+
+.checkbox-remember {
+  margin-top: 1.46vw;
+  display: flex;
+  gap: 0.83vw;
+}
+
+.checkbox-remember {
+  color: #333;
+  font-size: 0.938em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 22.5px */
+}
+
+.log-forgot {
+  margin-top: 2.08vw;
+  display: flex;
+  gap: 2.08vw;
+}
+
+.log-forgot button {
+  width: 8.61vw;
+  padding: 0.69vw 1.53vw;
+}
+
+.log-links {
+  display: flex;
+  flex-direction: column;
+}
+
+[type="checkbox"] {
+    width: 1.67vw;
+    height: 1.67vw;
+   /* border-radius: 0.69vw;
+    border: 0.14vw solid rgba(0, 0, 0, 0.6);
+    background: #e8edf0;*/
+}
+
+[type="checkbox"]:checked {
+  background: #3c66cb;
+}

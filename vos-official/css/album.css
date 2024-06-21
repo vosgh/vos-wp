@@ -1,0 +1,77 @@
+/*Album page*/
+
+.album {
+  padding: 2.85vw 2.78vw 4.86vw 2.78vw; /*41px 40px 70px 40px*/
+  display: flex;
+  flex-direction: column;
+}
+
+.album h2 {
+  margin-top: 1.94vw; /*28px*/
+}
+
+.album-container {
+  display: flex;
+  margin-top: 3.75vw; /*54px*/
+  gap: 7.99vw;
+}
+
+.photos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.74vw;
+}
+
+.main-photo {
+  width: 62.5vw;
+  position: relative;
+}
+
+.bckgrnd {
+  width: 100%;
+  height: auto;
+}
+
+.btn1,
+.btn2 {
+  position: absolute;
+  width: 15.2%;
+  top: 80%;
+}
+
+.btn1 {
+  left: 76%;
+}
+
+.btn2 {
+  left: 85%;
+}
+
+.small-photo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.small {
+  border-radius: 0.42vw;
+  width: 4.79vw;
+}
+
+.album-description {
+  padding: 2.36vw 1.67vw 4.24vw 2.57vw;
+  width: 23.82vw;
+  height: fit-content;
+  border-radius: 0.69vw;
+  border: 0.07vw solid rgba(0, 0, 0, 0.1);
+}
+
+.album-description h3,
+.description-links {
+  margin-top: 0.21vw;
+}
+
+.album-description h4 {
+  margin-top: 1.67vw;
+  opacity: 0.6;
+}

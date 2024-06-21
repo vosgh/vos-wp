@@ -23,7 +23,7 @@
   letter-spacing: -0.03em;
 }
 
-.text {
+.ask .text {
   margin-top: 1.39vw;
 }
 
@@ -114,14 +114,14 @@ textarea::placeholder {
   flex-direction: column;
 }
 
-textarea {
+.ask textarea {
   height: 20.83vw;
   border: 0.07vw solid rgba(0, 0, 0, 0.1);
   border-radius: 0.42vw;
   background: #e8edf0;
 }
 
-textarea::placeholder {
+.ask textarea::placeholder {
   padding: 1.04vw 0 0 1.39vw;
 }
 

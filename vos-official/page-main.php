@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Main
+Template Name: Главная
 */
 ?>
 
@@ -37,7 +37,7 @@ Template Name: Main
               <h3>Мероприятия</h3>
               <a href="/">Смотреть все</a>
             </div>
-            <div class="events">
+            <div class="events-main-container">
               <div class="first-event">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/calendar.svg" class="calendar" />
                 <h4>
@@ -45,12 +45,12 @@ Template Name: Main
                   самозанятых с инвалидностью «Инвастартап-2024»
                 </h4>
               </div>
-              <hr />
+              <hr class="main-page-events" />
               <div class="second-event">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/calendar.svg" class="calendar" />
                 <h4>Президент ВОС В. В. Сипкин встретился с представителями фонда «Защитники Отечества»</h4>
               </div>
-              <hr />
+              <hr class="main-page-events" />
               <div class="third-event">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/calendar.svg" class="calendar" />
                 <h4>ООО «ИПТК «Логосвос» подтвердил статус социального предприятия</h4>
@@ -128,9 +128,9 @@ Template Name: Main
         </div>
       </section>
       <hr class="disabled-info-line" />
-      <section class="info">
+      <section class="inform">
         <h2>Неравнодушным</h2>
-        <div class="info-container">
+        <div class="inform-container">
           <div class="info-products">
             <h3>Ознакомиться с продукцией ВОС</h3>
             <h4>Ассортимент продукции предприятий ВОС составляет более 80 наименований</h4>
