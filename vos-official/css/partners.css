@@ -1,0 +1,12 @@
+.partners {
+  padding: 5.9vw 2.85vw 0 2.78vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.partners-container {
+  margin-top: 2.57vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,80 @@
+/*Company info page*/
+
+.company,
+.company-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.company-header,
+.company-header-btns,
+.company-main,
+.company-video {
+  display: flex;
+}
+
+.company {
+  padding: 2.85vw 2.78vw 4.86vw 2.78vw; /*41px 40px 70px 40px*/
+}
+
+.company-container {
+  margin-top: 2.15vw; /*31px*/
+}
+
+.company-header {
+  justify-content: space-between;
+}
+
+.company-header-btns {
+  gap: 0.9vw; /*13px*/
+}
+
+.company-header-btns button {
+  width: 14.72vw; /*212px*/
+  padding: 0.69vw 1.53vw; /*10px 22px*/
+}
+
+.company-main {
+  margin-top: 2.85vw; /*41px*/
+  justify-content: space-between;
+  height: fit-content;
+}
+
+.company-main h4 {
+  opacity: 0.5;
+}
+
+.company-dir {
+  width: 20.83vw; /*300px*/
+}
+
+.company-spec {
+  width: 22.22vw; /*320px*/
+}
+
+.company-address {
+  width: 22.99vw;
+}
+
+.company-birthday {
+  width: 12.08vw; /*174px*/
+}
+
+.about-company {
+  margin-top: 3.06vw; /*44px*/
+  width: 62.5vw; /*900px*/
+}
+
+.about-company p,
+.video-container p {
+  text-align: justify;
+}
+
+.company-video {
+  margin-top: 4.86vw; /*70px*/
+  gap: 4.17vw; /*60px*/
+}
+
+.video-container img {
+  width: 62.5vw; /*900px*/
+}

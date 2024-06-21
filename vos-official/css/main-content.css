@@ -1,0 +1,110 @@
+/*main page*/
+
+.main-content {
+  padding: 3.96vw 2.57vw 0 2.78vw; /*57px 37px 0 40px*/
+  display: flex;
+  height: 37.64vw;
+}
+
+.name {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.name h2 {
+  margin-top: 1.39vw;
+}
+
+.name img {
+  margin-top: 5vw;
+  width: 10.97vw;
+  height: 10.97vw;
+}
+
+.name a {
+  margin-top: 1.53vw;
+  color: #333;
+  text-align: center;
+  align-self: flex-start;
+  font-size: 0.938em;
+  font-weight: 700;
+  line-height: 120%; /* 18px */
+}
+
+.main-content-container {
+  margin-top: 5.28vw;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.mySwiper {
+  width: 10.97vw;
+  position: absolute;
+  top: 0;
+  left: -9vw;
+  width: 48.61vw;
+  z-index: 1; /* Картинка находится ниже div событий */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-events {
+  position: absolute;
+  top: 1.39vw;
+  left: 40.28vw; /* 580px */
+  z-index: 2; /* div событий находится над картинкой */
+}
+
+.main-events {
+  width: 26.81vw; /*386px*/
+  height: fit-content;
+  border-radius: 0.69vw; /*10px*/
+  background: #e8edf0;
+  padding: 1.81vw 2.15vw 4.17vw 2.15vw; /*26px 31px 60px 31px*/
+  display: flex;
+  flex-direction: column;
+}
+
+.header-events {
+  display: flex;
+  justify-content: space-between;
+}
+
+.events {
+  margin-top: 2.08vw;
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  width: 100%;
+  height: 0.07vw;
+  opacity: 0.1;
+  background: #000;
+  margin: 1.25vw 0 0.97vw 0;
+}
+
+.first-event,
+.second-event,
+.third-event {
+  display: flex;
+  gap: 1.74vw;
+}
+
+.events img {
+  width: 4.24vw;
+  height: 4.24vw;
+}

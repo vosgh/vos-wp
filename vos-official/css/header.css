@@ -1,0 +1,173 @@
+header {
+  padding: 1.39vw 1.39vw 0 1.39vw;
+  display: flex;
+  gap: 2.92vw;
+}
+
+.logo-header img {
+  width: 9.51vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 81.94vw;
+}
+
+.header-upper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lang {
+  display: flex;
+  gap: 0.83vw;
+}
+
+.lang a {
+  color: #333;
+  font-family: Manrope;
+  font-size: 0.938em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 22.5px */
+  opacity: 0.4;
+}
+
+.lang a:active {
+  opacity: unset;
+  text-decoration: none;
+}
+
+.header-fullname {
+  display: flex;
+  gap: 1.25vw;
+  margin-left: 12.08vw;
+}
+
+.header-fullname img {
+  width: 1.81vw;
+  height: 2.22vw;
+}
+
+.header-fullname .text {
+  color: #333;
+  font-size: 0.688em;
+  line-height: 120%; /* 13.2px */
+}
+
+.social-search {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.92vw;
+  margin-left: 13.47vw;
+}
+
+.header-social {
+  display: flex;
+  width: 6.39vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-search {
+  width: 5.49vw;
+}
+
+.header-search img {
+  width: 1.39vw;
+  height: 1.39vw;
+}
+
+.passive-state {
+  width: 5.49vw;
+  display: flex;
+  gap: 0.69vw;
+}
+
+.active-state {
+  width: 26.81vw;
+  height: 4.17vw;
+  border-radius: 0.69vw;
+  background: #fff;
+  box-shadow: 0 0.69vw 2.08vw 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 0.69vw;
+  align-items: center;
+  padding-left: 2.08vw;
+  padding-top: 1.39vw;
+  display: none;
+}
+
+.active-state input {
+  width: 18.75vw;
+}
+
+.header-search--active {
+  .passive-state {
+    display: none;
+  }
+
+  .active-state {
+    display: block;
+  }
+
+  .header-upper {
+    height: 4.17vw;
+  }
+}
+
+.header-line {
+  width: 100%;
+  height: 0.07vw;
+  background: rgba(0, 0, 0, 0.1);
+  margin-top: 0.56vw;
+  margin-bottom: 1.32vw;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 3.47vw;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  cursor: default;
+}
+
+.nav-list a {
+  color: #333;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+}
+
+.nav-list a:hover,
+.lang a:hover {
+  text-decoration: none;
+}
+
+.header-menu button {
+  width: 18.33vw;
+  height: 3.06vw;
+  display: flex;
+  gap: 0.83vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-menu svg:hover path,
+.header-menu svg:focus path {
+  fill: #fff;
+}

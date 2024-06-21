@@ -1,0 +1,67 @@
+/*Documents page*/
+
+.docs {
+  padding: 2.85vw 2.78vw 4.86vw 2.78vw; /*41px 40px 70px 40px*/
+  display: flex;
+  gap: 8.26vw; /*119px*/
+}
+
+.docs-content,
+.docs-list,
+.docs-pagination,
+.pagination-start,
+.pagination-end,
+.pagination-buttons {
+    display: flex;
+}
+
+.docs-content {
+  flex-direction: column;
+  gap: 2.78vw; /*40px*/
+  height: fit-content;
+}
+
+.docs-list {
+  flex-direction: column;
+}
+
+.doc {
+  width: 54.51vw; /*785px*/
+  height: fit-content;
+  border-radius: 0.69vw; /*10px*/
+  border: 0.07vw solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 0.97vw 0 0.9vw 1.67vw; /*14px 0 13px 24px*/
+}
+
+.doc a {
+  color: #111;
+}
+
+.docs-pagination {
+  align-self: center;
+  margin-top: 2.78vw; /*40px*/
+}
+
+.pagination-start,
+.pagination-end {
+  align-items: center;
+  gap: 1.74vw;
+}
+
+.docs-pagination__a,
+.docs-pagination__button {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.pagination-buttons {
+  align-items: center;
+  gap: 0.69vw;
+}
+
+.docs-pagination__button {
+  width: 2.36vw; /*34px*/
+  height: 2.36vw; /*34px*/
+  border-radius: 0.69vw; /*10px*/
+  border: none;
+}

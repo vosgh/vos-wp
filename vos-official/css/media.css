@@ -1,0 +1,86 @@
+.media,
+.jrn-life,
+.radio,
+.jrn-dialog {
+  display: flex;
+}
+
+.media {
+  padding: 5.56vw 2.78vw 6.94vw 2.78vw;
+  position: relative;
+  justify-content: space-between;
+}
+
+.media button {
+  width: 8.96vw;
+  padding: 0.69vw 1.53vw 0.76vw 1.53vw;
+}
+
+.jrn-life,
+.jrn-dialog,
+.radio {
+  width: 29.17vw;
+  height: 17.78vw;
+  border-radius: 0.69vw;
+  background: #e8edf0;
+}
+
+.jrn-life img {
+  width: 11.94vw;
+  height: 14.79vw;
+  margin-left: 4.24vw;
+}
+
+.jrn-life-description,
+.radio-description,
+.jrn-dialog button,
+.jrn-dialog h3 {
+  margin-left: 1.68rem;
+}
+
+.jrn-life-description,
+.jrn-life img,
+.radio-description,
+.jrn-dialog h3 {
+  margin-top: 1.88vw;
+}
+
+.jrn-life img {
+  margin-right: 0.83vw;
+}
+
+.jrn-life-description button {
+  margin-top: 7.36vw;
+}
+
+.jrn-dialog {
+  flex-direction: column;
+}
+
+.jrn-dialog img {
+  margin: 2rem 0 0 6.46vw;
+  width: 17.57vw;
+  height: 4.51vw;
+}
+
+.jrn-dialog button {
+  margin-top: 2.43vw;
+}
+
+.radio img {
+  width: 14.03vw;
+  height: 16.53vw;
+  margin: 0.63vw 0 0 4.24vw;
+}
+
+.radio button {
+  margin-top: 9.17vw;
+}
+
+.media-pointer {
+  width: 9.79vw;
+  height: 9.79vw;
+  top: 10.42vw;
+  position: absolute;
+  left: 90.28vw;
+}

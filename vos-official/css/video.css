@@ -1,0 +1,150 @@
+.video,
+.video-container,
+.video-main,
+.imgssss,
+.video-highlighted,
+.video-highlighted-description,
+.video-president,
+.video-president-description,
+.video-feed,
+.one-video-feed {
+  display: flex;
+}
+
+.video {
+  padding: 0 2.78vw;
+  flex-direction: column;
+}
+
+.video-container {
+  margin-top: 3.678vw;
+  justify-content: space-between;
+}
+
+.video-main {
+  flex-direction: column;
+}
+
+.video-highlighted {
+  width: 62.569vw;
+  height: 22.917vw;
+  border-radius: 0.694vw;
+  border: 0.07vw solid rgba(0, 0, 0, 0.1);
+}
+
+.video-highlighted img {
+  width: 38.542vw;
+  height: 100%;
+  border-radius: 0.694vw;
+}
+
+.imgssss {
+  position: relative;
+}
+
+.imgssss .pointer {
+  width: 9.861vw;
+  height: 9.861vw;
+  align-self: center;
+  position: absolute;
+  z-index: 0;
+  left: 14.444vw;
+}
+
+.video-highlighted-description {
+  padding: 2.356vw 1.81vw 0 2.778vw;
+  flex-direction: column;
+}
+
+.video-highlighted-description h3 {
+  width: 19.444vw;
+  margin-top: 0.211vw;
+}
+
+.video-highlighted-description .tag {
+  margin-top: 0.278vw;
+}
+
+.video-highlighted-description h4,
+.video-president-description h4 {
+  opacity: 0.6;
+}
+
+.video-highlighted-description h4 {
+  width: 18.403vw;
+  margin-top: 1.811vw;
+}
+
+.video-president {
+  position: relative;
+  width: 62.569vw;
+  height: 22.993vw;
+  border-radius: 0.694vw;
+  background: #e8edf0;
+  margin-top: 2.567vw;
+}
+
+.video-president-description {
+  width: 19.44vw;
+  flex-direction: column;
+  margin: 3.267vw 0 0 3.189vw;
+}
+
+.president-img,
+.pointer-img {
+  position: absolute;
+}
+
+.president-img {
+  left: 20.9vw;
+}
+
+.pointer-img {
+  left: 53.89vw;
+  top: 14.24vw;
+}
+
+.video-president-description h4 {
+  margin-top: 1.322vw;
+}
+
+.video-president-description button {
+  width: 10.764vw;
+  height: 3.056vw;
+  margin-top: 4.933vw;
+}
+
+.video-president img {
+  margin: 0 4.444vw 0 0;
+}
+
+.video-feed {
+  flex-direction: column;
+  width: 26.806vw;
+  border-radius: 0.694vw;
+  background: #e8edf0;
+  padding: 3.333vw 1.736vw 0 2.083vw;
+}
+
+.one-video-feed {
+  gap: 1.389vw;
+}
+
+.one-video-feed img {
+  width: 8.333vw;
+  height: 6.25vw;
+  border-radius: 0.417vw;
+}
+
+.between-one-video-feed {
+  width: 100%;
+  height: 0.071vw;
+  opacity: 0.1;
+  margin-bottom: 0.978vw;
+}
+
+.video-feed h3 {
+  font-size: 0.9375em;
+  font-weight: 500;
+  line-height: 120%; /* 1.125rem */
+}

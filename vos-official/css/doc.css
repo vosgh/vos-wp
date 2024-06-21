@@ -1,0 +1,56 @@
+/*Document page*/
+
+.document,
+.document-container,
+.doc-content-btns,
+.document-content,
+.content-group {
+  display: flex;
+}
+
+.document {
+  padding: 2.85vw 26.81vw 4.86vw 2.78vw; /*41px 386px 70px 40px*/
+  gap: 6.25vw; /*90px*/
+}
+
+.document-container {
+  flex-direction: column;
+}
+
+.doc-content-btns {
+  margin-top: 2.78vw; /*40px*/
+  gap: 0.69vw; /*10px*/
+}
+
+.download {
+  width: 18.33vw; /*264px*/
+  padding: 0.69vw 1.53vw; /*10px 22px*/
+}
+
+.document-content {
+  margin-top: 3.06vw; /*44px*/
+  flex-direction: column;
+  height: fit-content;
+}
+
+.cnt-grp {
+  font-size: 1.5em; /*24px*/
+}
+
+.document-content hr {
+  margin-top: 0.07vw;
+  width: 100%;
+  height: 0.07vw; /*1px*/
+  background: black;
+  opacity: 0.2;
+}
+
+.content-group {
+  margin-top: 3.13vw; /*45px*/
+  flex-direction: column;
+  gap: 1.25vw; /*18px*/
+}
+
+.content-group p {
+  text-align: justify;
+}

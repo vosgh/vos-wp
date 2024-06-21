@@ -1,0 +1,29 @@
+/*Any info page*/
+
+.info {
+  padding: 2.85vw 20.83vw 4.86vw 2.78vw; /*41px 300px 70px 40px*/
+  display: flex;
+  gap: 9.31vw; /*134px*/
+}
+
+.info-menu {
+  width: 20.56vw; /*296px*/
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.15vw; /*31px*/
+  width: 58.33vw; /*840px*/
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.39vw; /*20px*/
+}
+
+.text {
+  text-align: justify;
+  color: #333333;
+}

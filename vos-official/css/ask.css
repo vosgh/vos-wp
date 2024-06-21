@@ -1,0 +1,150 @@
+/*Question page*/
+
+.ask {
+  padding: 2.85vw 2.57vw 5.56vw 2.78vw; /*41px 80px 40px*/
+  display: flex;
+  gap: 11.25vw;
+}
+
+.ask h2 {
+  margin-top: 1.94vw;
+}
+
+.ask-form {
+  margin-top: 2.5vw;
+  width: 46.53vw;
+  height: fit-content;
+}
+
+.ask-form h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 130%; /* 31.2px */
+  letter-spacing: -0.03em;
+}
+
+.text {
+  margin-top: 1.39vw;
+}
+
+.form-main-info {
+  margin-top: 2.78vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.69vw;
+}
+
+.form-main-info input {
+  width: 100%;
+  border-radius: 0.42vw;
+  border: 0.07vw solid rgba(0, 0, 0, 0.1);
+  background: #e8edf0;
+  padding: 1.04vw 0 1.11vw 1.39vw;
+}
+
+::placeholder,
+.info-disabled,
+.partof,
+textarea::placeholder {
+  color: #333;
+  font-size: 0.875em;
+  font-weight: 600;
+  line-height: 135%; /* 18.9px */
+  letter-spacing: -0.009em;
+}
+
+.form-info {
+  margin-top: 1.74vw;
+  display: flex;
+  gap: 1.39vw;
+}
+
+.info-disabled,
+.partof {
+  display: flex;
+  flex-direction: column;
+  gap: 0.97vw;
+}
+
+.disabled-wrapper {
+  width: 22.57vw;
+  border-radius: 0.42vw;
+  border: 0.07vw solid rgba(0, 0, 0, 0.1);
+  background: #e8edf0;
+  padding: 1.04vw 0 1.11vw 1.39vw;
+}
+
+.disabled {
+  width: 100%;
+}
+
+.yesorno {
+  display: flex;
+  gap: 0.42vw;
+  overflow: hidden;
+}
+
+.form_radio_btn input[type="radio"] {
+  display: none;
+}
+
+.form_radio_btn label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 1.04vw 1.39vw;
+  border: 0.07vw solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.42vw;
+  background: #e8edf0;
+}
+
+/* Hover */
+.form_radio_btn label:hover {
+  color: #666;
+}
+
+/* Checked */
+.form_radio_btn input[type="radio"]:checked + label {
+  background: #3c66cb;
+  color: #ffffff;
+}
+
+.question {
+  margin-top: 2.08vw;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  height: 20.83vw;
+  border: 0.07vw solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.42vw;
+  background: #e8edf0;
+}
+
+textarea::placeholder {
+  padding: 1.04vw 0 0 1.39vw;
+}
+
+.checkbox-agree {
+  margin-top: 2.08vw;
+  display: flex;
+  gap: 0.83vw;
+}
+
+[type="checkbox"] {
+  width: 1.67vw;
+  height: 1.67vw;
+  /* border-radius: 0.69vw;
+    border: 0.14vw solid rgba(0, 0, 0, 0.6);
+    background: #e8edf0;*/
+}
+
+[type="checkbox"]:checked {
+  background: #3c66cb;
+}
+
+.send-question {
+  margin-top: 2.78vw;
+  width: 17.71vw;
+  padding: 0.69vw 1.53vw;
+}

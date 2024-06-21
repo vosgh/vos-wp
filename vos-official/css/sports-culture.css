@@ -1,0 +1,69 @@
+.sports {
+  padding: 7.36vw 2.78vw 6.04vw 2.85vw;
+}
+
+.cultural {
+  padding: 0 2.78vw 0 2.85vw;
+}
+
+.sports h2,
+.cultural h2 {
+  margin-bottom: 2.78vw;
+}
+
+.sports h3,
+.cultural h3 {
+  color: #111;
+}
+
+.sports h4,
+.cultural h4 {
+  color: #333;
+  opacity: 0.6;
+  width: 18.4vw;
+  margin-top: 1.39vw;
+}
+
+.sports a,
+.cultural a {
+  margin-top: 1.53vw;
+}
+
+.sports,
+.cultural,
+.sport-event-over,
+.sport-event-under,
+.cultura-event-over,
+.cultura-event-under,
+.sport-event-description,
+.cultura-event-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.sport,
+.cultura {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3.61vw;
+  padding-bottom: 3.75vw;
+  border-radius: 0.69vw;
+  border: 0.07vw solid rgba(0, 0, 0, 0.1);
+}
+
+.sport-event-over,
+.sport-event-under,
+.cultura-event-over,
+.cultura-event-under {
+  width: 30%;
+}
+
+.sport-event-over h3,
+.cultura-event-over h3 {
+  margin-top: 2.01vw;
+}
+
+.sport-event-under img,
+.cultura-event-under img {
+  margin-top: 2.01vw;
+}

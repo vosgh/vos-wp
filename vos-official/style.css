@@ -1,0 +1,33 @@
+/*
+Theme Name: vos-official
+*/
+
+/*general*/
+
+@import "css/reset_base_style.css";
+@import "css/general.css";
+@import "css/fonts.css";
+@import "css/header.css";
+@import "css/footer.css";
+
+/*header*/
+@import "css/menu.css";
+
+/*main page*/
+
+@import "css/main-content.css";
+@import "css/disabled.css";
+@import "css/news-main.css";
+@import "css/sports-culture.css";
+@import "css/media.css";
+@import "css/video.css";
+@import "css/photo.css";
+@import "css/partners.css";
+
+@import "css/swiper-bundle.min.css";
+
+/*news*/
+@import "css/news.css";
+@import "css/onenews.css";
+
+
