@@ -2,6 +2,7 @@
 
 .login {
   padding: 4.03vw 29.1vw 0 29.24vw;
+  padding: 4.03vw 29.1vw 29.24vw;
   display: flex;
   width: 100%;
 }
@@ -76,13 +77,18 @@
 }
 
 [type="checkbox"] {
-    width: 1.67vw;
-    height: 1.67vw;
-   /* border-radius: 0.69vw;
+  width: 1.67vw;
+  height: 1.67vw;
+  /* border-radius: 0.69vw;
     border: 0.14vw solid rgba(0, 0, 0, 0.6);
     background: #e8edf0;*/
 }
 
 [type="checkbox"]:checked {
   background: #3c66cb;
+}
+
+.error {
+  margin-top: 1.04vw;
+  color: red;
 }

@@ -58,7 +58,11 @@
           </a>
         </div>
         <div class="footer-btns">
-          <button>Войти на сайт</button>
+          <?php if (is_user_logged_in()) : ?>
+            <button>Выйти</button>
+          <?php else : ?>
+            <button>Войти на сайт</button>
+          <?php endif; ?>
           <button>Вход для РО и предприятий</button>
           <button>Регистрация</button>
         </div>

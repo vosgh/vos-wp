@@ -12,37 +12,51 @@
         wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
     }
 
-    // Добавление пользовательского типа записи "Новости"
-    function custom_post_type_typical_pages() {
-        $labels = array(
-            'name' => 'Новости',
-            'singular_name' => 'Типовая страница',
-            'menu_name' => 'Новости',
-            'add_new' => 'Добавить новую',
-            'add_new_item' => 'Добавить новую типовую страницу',
-            'edit_item' => 'Редактировать типовую страницу',
-            'new_item' => 'Новая типовая страница',
-            'view_item' => 'Просмотреть типовую страницу',
-            'search_items' => 'Искать типовую страницу',
-            'not_found' => 'Типовые страницы не найдены',
-            'not_found_in_trash' => 'В корзине нет типовых страниц',
-            'parent_item_colon' => '',
-        );
-    
-        $args = array(
-            'labels' => $labels,
-            'public' => true,
-            'has_archive' => false,
-            'publicly_queryable' => false,
-            'show_ui' => true,
-            'show_in_menu' => true,
-            'menu_position' => 5,
-            'supports' => array('title', 'editor', 'thumbnail', 'page-attributes'),
-            'rewrite' => false,
-        );
-    
-        register_post_type('typical_page', $args);
+    /* Авторизация */
+
+    // Перенаправление при ошибке авторизации
+    function custom_login_failed($username) {
+        $referrer = $_SERVER['HTTP_REFERER']; // Получаем URL реферера
+        $login_page = home_url('/авторизация/'); // URL страницы авторизации
+
+        // Проверяем, если реферер не пустой и не является страницей авторизации по умолчанию
+        if (!empty($referrer) && !strstr($referrer, 'wp-login') && !strstr($referrer, 'wp-admin')) {
+            wp_redirect($login_page . '?login=failed');
+            exit;
+        }
     }
-    add_action('init', 'custom_post_type_typical_pages');
- 
+    add_action('wp_login_failed', 'custom_login_failed');
+
+    // Проверка логина и пароля на пустоту
+    function custom_verify_username_password($user, $username, $password) {
+        $login_page = home_url('/авторизация/');
+        if (empty($username) || empty($password)) {
+            wp_redirect($login_page . '?login=empty');
+            exit;
+        }
+        return $user;
+    }
+    add_filter('authenticate', 'custom_verify_username_password', 1, 3);
+
+    // Перенаправление после выхода
+    function custom_logout_redirect() {
+        $login_page = home_url('/авторизация/');
+        wp_redirect($login_page . '?logout=true');
+        exit;
+    }
+    add_action('wp_logout', 'custom_logout_redirect');
+
+    /* Футер кнопки */
+
+    function enqueue_custom_scripts() {
+        wp_enqueue_script('custom-scripts', get_template_directory_uri() . '/js/custom-scripts.js', array(), null, true);
+    
+        // Передаем данные в JavaScript
+        wp_localize_script('custom-scripts', 'loginData', array(
+            'isUserLoggedIn' => is_user_logged_in(),
+            'logoutUrl' => wp_logout_url(home_url()),
+        ));
+    }
+    add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
+    
 ?>

@@ -10,6 +10,11 @@ Template Name: Новости
         <div class="news-header">
           <h4>Главная / Новости</h4>
           <h1>Новости ВОС</h1>
+          <?php if (is_user_logged_in()) : ?>
+              <div class="new-post-btn">
+                  <a href="<?php echo home_url('/%d1%84%d0%be%d1%80%d0%bc%d0%b0-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%be%d0%b2%d0%be%d1%81%d1%82%d0%b8/'); ?>" class="btn">Новая</a>
+              </div>
+          <?php endif; ?>
         </div>
         <div class="news-content">
           <div class="list">
